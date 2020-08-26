@@ -23,8 +23,9 @@
           </ul>
         </nav>
        
+        <address class="adress-top">
         <ul class="list menu-contacts">
-            <li><a href="mailto:info@devstudio.com" class="email-link"> 
+            <li class="mail"><a href="mailto:info@devstudio.com" class="email-link"> 
               <img src="./images/envelope_hover.svg" width="16" height="11" alt="ссылка на почту">info@devstudio.com
                </a></li>
 
@@ -32,6 +33,7 @@
               <img src="./images/smartphone.svg" width="10" height="15" alt="телефон">+38 096 111 11 11
                </a></li>
         </ul>
+      </address>
       </div>
     </header>
 
@@ -40,15 +42,15 @@
     <!-- our landmarks -->
      <div class="container">
       <div>
-        <h1 class="page-title">Эффективные решения <br>для вашего бизнеса</h1>
+        <h1 class="page-title">Эффективные решения <br />для вашего бизнеса</h1>
         <button class="btn">Заказать услугу</button>
       </div>
      </div>
     </section>
 
-    <section>
+    <section class="section">
       <div class="container">
-      <ul class="list section">
+      <ul class="list principles">
         <li class="priorities">
           <img src="./images/antenna1.svg" width="70" height="70" alt="антена"/>
           <h3 class="title-label">Внимание к деталям</h3>
@@ -82,17 +84,17 @@
         <h2 class="section-title">Чем мы занимаемся</h2>
       <ul class="list activity-list">
         <li class="activity-item">
-          <img src="./images/desktop.jpg" width="370" height="294" alt="приложение"/>
+          <img class="activity-picture" src="./images/desktop.jpg" width="370" alt="приложение"/>
           <h3 class="activity">Десктопные приложения</h3>
         </li>
       
         <li class="activity-item">
-          <img src="./images/mobile.jpg" width="370" height="294" alt="телефон"/>
+          <img class="activity-picture" src="./images/mobile.jpg" width="370" alt="телефон"/>
           <h3 class="activity">Мобильные приложения</h3>
         </li>
       
         <li class="activity-item">
-          <img src="./images/monitor.jpg" width="370" height="294" alt="монитор"/>
+          <img class="activity-picture" src="./images/monitor.jpg" width="370" alt="монитор"/>
           <h3 class="activity">Дизайнерские решения</h3>
         </li>
       </ul>
@@ -104,82 +106,98 @@
       <div class="container">
       <h2 class="section-title">Наша команда</h2>
       <ul class="list team-list">
-        <li class="team-item member">
-          <img src="./images/nikola.jpg" width="270" height="260" alt="фото Николай"/>
+        <li class="team-item">
+          <img class="member" src="./images/nikola.jpg" width="270" alt="фото Николай"/>
           <h3 class="member-name" lang="ru">Николай Кучеренко</h3>
           <p class="member-position" lang="en">Product Designer</p>
         <ul class="list">
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">Instagram</a>
+            <li class="icon-list">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
+                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">Twitter</a>
+            <li class="icon-list">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
+                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">Facebook</a>
+            <li class="icon-list">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
+                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">Linkedin</a>
+            <li class="icon-list">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
+                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
             </li>
         </ul>
         </li>
       
-        <li class="team-item member">
-          <img src="./images/olga.jpg" width="270" height="260" alt="фото Ольга"/>
+        <li class="team-item">
+          <img class="member" src="./images/olga.jpg" width="270" alt="фото Ольга"/>
           <h3 class="member-name" lang="ru">Ольга Иванова</h3>
           <p class="member-position" lang="en">Frontend Developer</p>
           <ul class="list">
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">Instagram</a>
+            <li class="icon-list">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
+                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">Twitter</a>
+            <li class="icon-list">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
+                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">Facebook</a>
+            <li class="icon-list">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
+                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">Linkedin</a>
+            <li class="icon-list">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
+                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
             </li>
           </ul>
         </li>
       
-        <li class="team-item member">
-          <img src="./images/andrew.jpg" width="270" height="260" alt="фото Андрей"/>
+        <li class="team-item">
+          <img class="member" src="./images/andrew.jpg" width="270" alt="фото Андрей"/>
           <h3 class="member-name" lang="ru">Андрей Шевченко</h3>
           <p class="member-position" lang="en">Marketing</p>
           <ul class="list">
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">Instagram</a>
+            <li class="icon-list">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
+                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">Twitter</a>
+            <li class="icon-list">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
+                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">Facebook</a>
+            <li class="icon-list">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
+                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">Linkedin</a>
+            <li class="icon-list">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
+                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
             </li>
           </ul>
         </li>
 
-        <li class="team-item member">
-          <img src="./images/ivan.jpg" width="270" height="260" alt="фото Иван"/>
+        <li class="team-item">
+          <img class="member" src="./images/ivan.jpg" width="270" alt="фото Иван"/>
           <h3 class="member-name" lang="ru">Иван Николаев</h3>
           <p class="member-position" lang="en">UI Designer</p>
           <ul class="list">
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">Instagram</a>
+            <li class="icon-list">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
+                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">Twitter</a>
+            <li class="icon-list">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
+                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">Facebook</a>
+            <li class="icon-list">
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
+                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">Linkedin</a>
+            <li class="icon-list">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
+                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
             </li>
           </ul>
         </li>
@@ -188,27 +206,39 @@
     </section>
 
     <!-- repeated customers -->
-    <section class="section">
+    <section class="section-customers">
       <div class="container">
       <h2 class="section-title">Постоянные клиенты</h2>
       <ul class="list site-nav">
-        <li>
-          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo1</a>
+        <li class="partner">
+          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+            <img src="./images/logo1.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          </a>
         </li>
-        <li>
-          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo2</a>
+        <li class="partner">
+          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+            <img src="./images/logo2.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          </a>
         </li>
-        <li>
-          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo3</a>
+        <li class="partner">
+          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+            <img src="./images/logo3.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          </a>
         </li>
-        <li>
-          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo4</a>
+        <li class="partner">
+          <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+            <img src="./images/logo4.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          </a>
         </li>
-        <li>
-        <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo5</a>
+        <li class="partner">
+        <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+          <img src="./images/logo5.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+        </a>
         </li>
-        <li>
-        <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">logo6</a>
+        <li class="partner">
+        <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
+          <img src="./images/logo6.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+        </a>
         </li>
       </ul>
       </div>
@@ -216,36 +246,42 @@
   </main>
   
     <footer class="page-footer">
-         <div class="container">
-          <a class="logo" href="WebStudio"><span class="logo-web">Web</span> Studio</a>
-         <address>
-            <ul class="list contacts-list">
-              <li class="contacts-item"><a href="https://www.google.com/maps/place" class="contacts-link-adress" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-              <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-              <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
-        </div>
+        <div class="container footer-flexbox">
 
-        <div class="container">
-          <b class="social">Присоединяйтесь</b>
+          <div class="basement">
+          <a class="logo" href="WebStudio"><span class="logo-web">Web</span> Studio</a>
+
+          <address class="adress contacts-item">
+            <a href="https://www.google.com/maps/place" class="contacts-link-adress">г. Киев, пр-т Леси Украинки, 26</a><br />
+            <a href="mailto:info@devstudio.com" class="contacts-link-email">info@devstudio.com</a><br />
+            <a href="tel:+380961111111" class="contacts-link-phone">+38 096 111 11 11</a><br />
+          </address>
+          </div>
+
+        <div class="footer-form">
+          <b class="social footer-flexbox">Присоединяйтесь</b>
       <ul class="list social-list">
         <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">Instagram</a>
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">
+              <img src="./images/instagram1.svg" alt="Линк на Instagram" width="20" height="20" class="smm"/></a>
         </li>
         <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">Twitter</a>
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">
+              <img src="./images/twitter1.svg" alt="Линк на Twitter" width="20" height="20" class="smm"/></a>
         </li>
         <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">Facebook</a>
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">
+              <img src="./images/facebook1.svg" alt="Линк на Facebook" width="20" height="20" class="smm"/></a>
         </li>
         <li class="social-item">
-            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">Linkedin</a>
+            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">
+              <img src="./images/linkedin1.svg" alt="Линк на Linkedin" width="20" height="20" class="smm"/></a>
         </li>
       </ul>
         </div>
+    </div>
     </footer>
-  </body>
+ </body>
 </html>
 
 
