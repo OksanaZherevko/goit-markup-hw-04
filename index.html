@@ -25,13 +25,22 @@
        
         <address class="adress-top">
         <ul class="list menu-contacts">
-            <li class="mail"><a href="mailto:info@devstudio.com" class="email-link"> 
-              <img src="./images/envelope_hover.svg" width="16" height="11" alt="ссылка на почту">info@devstudio.com
-               </a></li>
+            <li class="mail">
+              <a href="mailto:info@devstudio.com" class="email-link" aria-label="ссылка на почту">
+                 <svg class="sprite-envelope" width="16" height="12">
+                 <use href="./images/sprite.svg#envelope_hover"></use>
+                 </svg>
+                info@devstudio.com
+              </a>
+            </li>
 
-            <li><a href="tel:+380961111111" class="phone-link"> 
-              <img src="./images/smartphone.svg" width="10" height="15" alt="телефон">+38 096 111 11 11
-               </a></li>
+            <li class="phone">
+              <a href="tel:+380961111111" class="phone-link" aria-label="телефон"> 
+                 <svg class="sprite-smartphone" width="10" height="16">
+                 <use href="./images/sprite.svg#smartphone"></use>
+                 </svg>
+                +38 096 111 11 11</a>
+            </li>
         </ul>
       </address>
       </div>
@@ -42,7 +51,7 @@
     <!-- our landmarks -->
      <div class="container">
       <div>
-        <h1 class="page-title">Эффективные решения <br />для вашего бизнеса</h1>
+        <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
         <button class="btn">Заказать услугу</button>
       </div>
      </div>
@@ -52,25 +61,41 @@
       <div class="container">
       <ul class="list principles">
         <li class="priorities">
-          <img src="./images/antenna1.svg" width="70" height="70" alt="антена"/>
+          <div class="cover" aria-label="внимание к деталям">
+            <svg class="sprite-antenna" width="70" height="70">
+              <use href="./images/sprite.svg#antenna1"></use>
+            </svg>
+          </div>
           <h3 class="title-label">Внимание к деталям</h3>
           <p class="section-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
      
         <li class="priorities">
-          <img src="./images/clock1.svg" width="70" height="70" alt="часы"/>
+          <div class="cover" aria-label="пунктуальность">
+            <svg class="sprite-clock" width="70" height="70">
+              <use href="./images/sprite.svg#clock1"></use>
+            </svg>
+          </div>
           <h3 class="title-label">Пунктуальность</h3>
           <p class="section-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
      
         <li class="priorities">
-          <img src="./images/diagram1.svg" width="70" height="70" alt="диаграма"/>
+          <div class="cover" aria-label="планирование">
+            <svg class="sprite-diagram" width="70" height="70">
+              <use href="./images/sprite.svg#diagram1"></use>
+            </svg>
+          </div>
           <h3 class="title-label">Планирование</h3>
           <p class="section-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
      
         <li class="priorities">
-          <img src="./images/astronaut1.svg" width="70" height="70" alt="астронавт"/>
+          <div class="cover" aria-label="технологии">
+            <svg class="sprite-diagram" width="70" height="70">
+              <use href="./images/sprite.svg#astronaut1"></use>
+            </svg>
+          </div>
           <h3 class="title-label">Современные технологии</h3>
           <p class="section-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
@@ -85,17 +110,17 @@
       <ul class="list activity-list">
         <li class="activity-item">
           <img class="activity-picture" src="./images/desktop.jpg" width="370" alt="приложение"/>
-          <h3 class="activity">Десктопные приложения</h3>
+          <!-- <h3 class="activity">Десктопные приложения</h3> -->
         </li>
       
         <li class="activity-item">
           <img class="activity-picture" src="./images/mobile.jpg" width="370" alt="телефон"/>
-          <h3 class="activity">Мобильные приложения</h3>
+         <!-- <h3 class="activity">Мобильные приложения</h3> -->
         </li>
       
         <li class="activity-item">
           <img class="activity-picture" src="./images/monitor.jpg" width="370" alt="монитор"/>
-          <h3 class="activity">Дизайнерские решения</h3>
+         <!-- <h3 class="activity">Дизайнерские решения</h3> -->
         </li>
       </ul>
       </div>
@@ -107,99 +132,167 @@
       <h2 class="section-title">Наша команда</h2>
       <ul class="list team-list">
         <li class="team-item">
-          <img class="member" src="./images/nikola.jpg" width="270" alt="фото Николай"/>
-          <h3 class="member-name" lang="ru">Николай Кучеренко</h3>
+          <img class="member" src="./images/ihor.jpg" width="270" alt="фото Игорь"/>
+          <h3 class="member-name" lang="ru">Игорь Демьяненко</h3>
           <p class="member-position" lang="en">Product Designer</p>
+
         <ul class="list">
             <li class="icon-list">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
-                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
-                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
-                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
-                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin1"></use>
+                </svg>
+                </a>
             </li>
         </ul>
+
         </li>
       
         <li class="team-item">
           <img class="member" src="./images/olga.jpg" width="270" alt="фото Ольга"/>
-          <h3 class="member-name" lang="ru">Ольга Иванова</h3>
+          <h3 class="member-name" lang="ru">Ольга Репина</h3>
           <p class="member-position" lang="en">Frontend Developer</p>
+
           <ul class="list">
             <li class="icon-list">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
-                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
-                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
-                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
-                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin1"></use>
+                </svg>
+                </a>
             </li>
-          </ul>
+        </ul>
+
         </li>
       
         <li class="team-item">
-          <img class="member" src="./images/andrew.jpg" width="270" alt="фото Андрей"/>
-          <h3 class="member-name" lang="ru">Андрей Шевченко</h3>
+          <img class="member" src="./images/nikola.jpg" width="270" alt="фото Николай"/>
+          <h3 class="member-name" lang="ru">Николай Тарасов</h3>
           <p class="member-position" lang="en">Marketing</p>
+
           <ul class="list">
             <li class="icon-list">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
-                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
-                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
-                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
-                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin1"></use>
+                </svg>
+                </a>
             </li>
-          </ul>
+        </ul>
+
         </li>
 
         <li class="team-item">
-          <img class="member" src="./images/ivan.jpg" width="270" alt="фото Иван"/>
-          <h3 class="member-name" lang="ru">Иван Николаев</h3>
+          <img class="member" src="./images/mich.jpg" width="270" alt="фото Михаил"/>
+          <h3 class="member-name" lang="ru">Михаил Ермаков</h3>
           <p class="member-position" lang="en">UI Designer</p>
+
           <ul class="list">
             <li class="icon-list">
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram" class="icon">
-                <img src="./images/instagram1.svg" alt="Instagram" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter" class="icon">
-                <img src="./images/twitter1.svg" alt="Twitter" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook" class="icon">
-                <img src="./images/facebook1.svg" alt="Facebook" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook1"></use>
+                </svg>
+              </a>
             </li>
+
             <li class="icon-list">
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin" class="icon">
-                <img src="./images/linkedin1.svg" alt="Linkedin" width="20" height="20" class="smm"/></a>
+                <svg class="smm-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin1"></use>
+                </svg>
+                </a>
             </li>
-          </ul>
+        </ul>
+
         </li>
       </ul>
       </div>
@@ -212,32 +305,44 @@
       <ul class="list site-nav">
         <li class="partner">
           <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-            <img src="./images/logo1.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+            <svg class="sprite-client" width="44" height="49">
+              <use href="./images/sprite.svg#logo1"></use>
+            </svg>
           </a>
         </li>
         <li class="partner">
           <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-            <img src="./images/logo2.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+            <svg class="sprite-client" width="40" height="52">
+              <use href="./images/sprite.svg#logo2"></use>
+            </svg>
           </a>
         </li>
         <li class="partner">
           <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-            <img src="./images/logo3.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+            <svg class="sprite-client" width="41" height="43">
+              <use href="./images/sprite.svg#logo3"></use>
+            </svg>
           </a>
         </li>
         <li class="partner">
           <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-            <img src="./images/logo4.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+            <svg class="sprite-client" width="80" height="42">
+              <use href="./images/sprite.svg#logo4"></use>
+            </svg>
           </a>
         </li>
         <li class="partner">
         <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-          <img src="./images/logo5.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          <svg class="sprite-client" width="59" height="47">
+            <use href="./images/sprite.svg#logo5"></use>
+          </svg>
         </a>
         </li>
         <li class="partner">
         <a href="#" class="link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на Логотип">
-          <img src="./images/logo6.svg" alt="ссылка на Логотип компании" class="logo-company"/>
+          <svg class="sprite-client" width="89" height="46">
+            <use href="./images/sprite.svg#logo6"></use>
+          </svg>
         </a>
         </li>
       </ul>
@@ -263,19 +368,31 @@
       <ul class="list social-list">
         <li class="social-item">
             <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на instagram">
-              <img src="./images/instagram1.svg" alt="Линк на Instagram" width="20" height="20" class="smm"/></a>
+              <svg class="smm-icon" width="20" height="20">
+                <use href="./images/sprite.svg#instagram1"></use>
+              </svg>
+            </a>  
         </li>
         <li class="social-item">
             <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на twitter">
-              <img src="./images/twitter1.svg" alt="Линк на Twitter" width="20" height="20" class="smm"/></a>
+              <svg class="smm-icon" width="20" height="20">
+                <use href="./images/sprite.svg#twitter1"></use>
+              </svg>
+            </a>
         </li>
         <li class="social-item">
             <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на facebook">
-              <img src="./images/facebook1.svg" alt="Линк на Facebook" width="20" height="20" class="smm"/></a>
+              <svg class="smm-icon" width="20" height="20">
+                <use href="./images/sprite.svg#facebook1"></use>
+              </svg>
+            </a>
         </li>
         <li class="social-item">
             <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ссылка на linkedin">
-              <img src="./images/linkedin1.svg" alt="Линк на Linkedin" width="20" height="20" class="smm"/></a>
+              <svg class="smm-icon" width="20" height="20">
+                <use href="./images/sprite.svg#linkedin1"></use>
+              </svg>
+            </a>
         </li>
       </ul>
         </div>

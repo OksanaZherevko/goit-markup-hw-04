@@ -14,11 +14,13 @@ font-family: 'Roboto', sans-serif; */
   --white-color: #FFFFFF;
   --shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --contacts-link-color: rgba(255, 255, 255, 0.6);
-  --hero-color: rgba(47, 48, 58, 0.8);
+  --hero-color: rgba(47, 48, 58, 0.4);
   --teams-color: #F5F4FA;
   --footer-color: #2F303A;
   --outline-color: tomato;
   --grey-border-color: #eeeeee;
+  --grey-border-color-partners: #afb1b8;
+  --grey-dark-circle-for-icon: rgba(255, 255, 255, 0.1);
   }
 
   .visually-hidden {
@@ -51,7 +53,7 @@ font-family: 'Roboto', sans-serif; */
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid var(--outline-color);
+  /* outline: 2px solid var(--outline-color); */
    }
 
   .list {
@@ -72,13 +74,22 @@ font-family: 'Roboto', sans-serif; */
     padding-right: 12px;
     padding-left: 12px;
     padding-bottom: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
   }
 
-  .smm {
-    display: block;
+  .smm-icon {
+    fill: currentColor;
   }
 
-  .page-title {
+  .icon-list .icon:hover,
+  .icon-list .icon:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+
+  .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
@@ -134,6 +145,19 @@ font-family: 'Roboto', sans-serif; */
       
   .priorities:nth-child(4n) {
     margin-right: 0;
+  }
+
+  .cover {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 4px;
+    margin-bottom: 30px;
+  
+    width: 270px;
+    height: 120px;
+    background-color: var(--teams-color);
   }
   
   .section-title {
@@ -224,6 +248,7 @@ font-family: 'Roboto', sans-serif; */
   align-items: center;
   text-align: center;
   border-radius: 4px;
+  border: 0px;
   padding: 10px 32px;
   min-width: 200px;
 }
@@ -261,7 +286,6 @@ font-family: 'Roboto', sans-serif; */
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  
 }
 
 .section-header {
@@ -364,7 +388,8 @@ color: var(--accent-color);
 
 .email-link,
 .phone-link {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -373,19 +398,38 @@ color: var(--accent-color);
   text-decoration: none;
 }
 
-.email-link:hover,
-.email-link:focus,
-.phone-link:hover,
-.phone-link:focus {
- color: var(--accent-color);
+ .email-link:hover,
+ .email-link:focus,
+ .phone-link:hover,
+ .phone-link:focus {
+  color: var(--accent-color);
+}
+
+.sprite-envelope,
+.sprite-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .hero {
   text-align: center;
-  background: var(--hero-color);
   padding-top: 200px;
   padding-bottom: 200px;
-}
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 40%),
+      rgba(47, 48, 58, 40%)
+    ),
+    url(../images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--hero-color);
+ }
 
 .teams {
   background: var(--teams-color);
@@ -418,13 +462,24 @@ color: var(--accent-color);
 }
 
 .link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border-radius: 4px;
   border: 1px solid var(--main-color);
+  color: var(--grey-border-color-partners);
+}
+
+.sprite-client {
+  fill: currentColor;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .site-nav .link {
@@ -600,10 +655,15 @@ margin-right: 10px;
   padding-right: 12px;
   padding-left: 12px;
   padding-bottom: 12px;
+  color: var(--white-color);
+  background-color: var(--grey-dark-circle-for-icon);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-.social-link:hover,
-.socail-list:focus {
+.social-item .social-link:hover,
+.social-item .socail-list:focus {
   color: var(--accent-color);
 }
 
