@@ -664,6 +664,7 @@ margin-right: 10px;
 
 .social-item .social-link:hover,
 .social-item .socail-list:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color:var(--white-color);
 }
 
