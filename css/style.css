@@ -81,7 +81,8 @@ font-family: 'Roboto', sans-serif; */
   }
 
   .smm-icon:hover,
-  .smm-icon:focus {
+  .smm-icon:focus,
+  a.icon:focus {
     fill: var(--white-color);
   }
 
@@ -181,7 +182,8 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .filtre {
-  text-decoration: none; 
+  text-decoration: none;
+  display: block;
 }
 
 .portfolio-item .example {
@@ -200,9 +202,12 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item:focus,
+.portfolio-item:active,
+ a.filtre:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .section-portfolio {
@@ -584,7 +589,6 @@ flex-wrap: wrap;
   margin-bottom: 16px;
   margin-top: 0px;
 }
-
 
 .portfolio {
   display: flex;
