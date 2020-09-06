@@ -82,7 +82,8 @@ font-family: 'Roboto', sans-serif; */
 
   .smm-icon:hover,
   .smm-icon:focus,
-  a.icon:focus {
+  a.icon:focus,
+  .icon-list:hover svg {
     fill: var(--white-color);
   }
 
